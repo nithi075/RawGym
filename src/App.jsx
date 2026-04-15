@@ -5,7 +5,7 @@ import Hero from "./components/hero/Hero";
 import Transformations from "./components/Transformation/Transformation";
 import Programs from "./components/Programs/Programs";
 import Pricing from "./components/Pricing/Pricing";
-import Testimonials from "./components/Testimonial/Testimonial";
+import Testimonials from "./components/testimonial/Testimonial";
 import FAQ from "./components/FAQ/FAQ";
 import Location from "./components/Location/Location";
 import Footer from "./components/Footer/Footer";
