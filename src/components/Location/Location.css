@@ -1,0 +1,363 @@
+.location-section{
+
+  padding:130px 10%;
+
+  background:#050505;
+
+  color:white;
+
+  text-align:center;
+
+}
+
+
+/* heading */
+
+.location-heading{
+
+  max-width:600px;
+
+  margin:auto;
+
+  margin-bottom:60px;
+
+}
+
+
+.mini-tag{
+
+  font-size:12px;
+
+  letter-spacing:2px;
+
+  color:#ff4a4a;
+
+  font-weight:700;
+
+  display:inline-block;
+
+  margin-bottom:14px;
+
+}
+
+
+.location-heading h2{
+
+  font-size:clamp(34px,4vw,46px);
+
+  font-weight:900;
+
+  margin-bottom:14px;
+
+}
+
+
+.location-heading span{
+
+  background:linear-gradient(45deg,#ff3e3e,#ff9b9b);
+
+  -webkit-background-clip:text;
+
+  -webkit-text-fill-color:transparent;
+
+}
+
+
+.location-heading p{
+
+  color:#9a9a9a;
+
+  line-height:1.7;
+
+}
+
+
+/* branch buttons */
+
+.branch-selector{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:16px;
+
+  margin-bottom:40px;
+
+  flex-wrap:wrap;
+
+}
+
+
+.branch-btn{
+
+  padding:14px 26px;
+
+  border-radius:30px;
+
+  background:#0f0f0f;
+
+  border:1px solid rgba(255,255,255,.05);
+
+  color:#aaa;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+  font-weight:600;
+
+}
+
+
+.branch-btn:hover{
+
+  border:1px solid rgba(255,60,60,.3);
+
+  color:white;
+
+}
+
+
+.branch-btn.active{
+
+  background:linear-gradient(45deg,#ff3e3e,#ff7a7a);
+
+  color:white;
+
+  border:none;
+
+  box-shadow:0 15px 40px rgba(255,60,60,.35);
+
+}
+
+
+/* map */
+
+.map-wrapper{
+
+  position:relative;
+
+  max-width:950px;
+
+  margin:auto;
+
+}
+
+
+.map-wrapper iframe{
+
+  width:100%;
+
+  height:420px;
+
+  border:none;
+
+  border-radius:22px;
+
+  box-shadow:0 30px 80px rgba(0,0,0,.7);
+
+}
+
+
+/* overlay card */
+
+.map-overlay{
+
+  position:absolute;
+
+  bottom:20px;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  background:rgba(15,15,15,.75);
+
+  padding:18px 26px;
+
+  border-radius:16px;
+
+  backdrop-filter:blur(12px);
+
+  border:1px solid rgba(255,255,255,.05);
+
+}
+
+
+.map-overlay p{
+
+  font-size:13px;
+
+  margin-bottom:10px;
+
+  color:#ccc;
+
+}
+
+
+/* button */
+
+.direction-btn{
+
+  display:inline-block;
+
+  padding:12px 24px;
+
+  border-radius:12px;
+
+  text-decoration:none;
+
+  background:#ff3e3e;
+
+  color:white;
+
+  font-weight:700;
+
+  transition:.3s;
+
+}
+
+
+.direction-btn:hover{
+
+  transform:translateY(-3px);
+
+  box-shadow:0 15px 35px rgba(255,60,60,.4);
+
+}
+
+
+/* responsive */
+
+@media(max-width:700px){
+
+.location-section{
+
+  padding:90px 25px;
+
+}
+
+
+.map-wrapper iframe{
+
+  height:260px;
+
+}
+
+
+.map-overlay{
+
+  width:85%;
+
+}
+
+}
+/* ================= LOCATION MOBILE ================= */
+
+@media (max-width:700px){
+
+.location-section{
+  padding:85px 6%;
+}
+
+/* heading */
+
+.location-heading{
+  margin-bottom:40px;
+}
+
+.mini-tag{
+  font-size:11px;
+  letter-spacing:1.5px;
+}
+
+.location-heading h2{
+  font-size:28px;
+  line-height:1.25;
+}
+
+.location-heading p{
+  font-size:14px;
+  padding:0 5px;
+}
+
+/* branch buttons */
+
+.branch-selector{
+  gap:10px;
+  margin-bottom:30px;
+}
+
+.branch-btn{
+  padding:12px 18px;
+  font-size:13px;
+  border-radius:25px;
+}
+
+/* map */
+
+.map-wrapper iframe{
+  height:260px;
+  border-radius:18px;
+}
+
+/* overlay */
+
+.map-overlay{
+  width:90%;
+  padding:14px 18px;
+  border-radius:14px;
+}
+
+.map-overlay p{
+  font-size:12px;
+}
+
+/* direction button */
+
+.direction-btn{
+  padding:11px 18px;
+  font-size:13px;
+  border-radius:10px;
+}
+
+}
+
+
+/* small phones */
+
+@media (max-width:420px){
+
+.location-section{
+  padding:75px 18px;
+}
+
+.location-heading h2{
+  font-size:24px;
+}
+
+.location-heading p{
+  font-size:13px;
+}
+
+.branch-btn{
+  width:100%;
+  text-align:center;
+}
+
+.map-wrapper iframe{
+  height:220px;
+}
+
+.map-overlay{
+  width:95%;
+  padding:12px 14px;
+}
+
+.direction-btn{
+  width:100%;
+  padding:12px;
+}
+
+}

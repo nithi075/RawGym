@@ -1,0 +1,353 @@
+.transform-section{
+
+  padding:130px 10%;
+  background:#050505;
+  color:white;
+  text-align:center;
+
+}
+
+
+/* heading */
+
+.transform-heading{
+
+  max-width:650px;
+  margin:auto;
+  margin-bottom:60px;
+
+}
+
+
+.mini-tag{
+
+  font-size:12px;
+  letter-spacing:2px;
+  color:#ff4a4a;
+  font-weight:700;
+  display:inline-block;
+  margin-bottom:14px;
+
+}
+
+
+.transform-heading h2{
+
+  font-size:clamp(32px,4vw,44px);
+  font-weight:900;
+  margin-bottom:12px;
+
+}
+
+
+.transform-heading span{
+
+  background:linear-gradient(45deg,#ff3e3e,#ff9b9b);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+
+}
+
+
+.transform-heading p{
+
+  color:#9a9a9a;
+  line-height:1.7;
+  font-size:15px;
+
+}
+
+
+/* gallery */
+
+.transform-gallery{
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+  gap:14px;
+
+}
+
+
+/* card */
+
+.transform-box{
+
+  position:relative;
+
+  aspect-ratio:3/4;
+
+  border-radius:14px;
+
+  overflow:hidden;
+
+  background:#111;
+
+  cursor:pointer;
+
+  transition:.4s;
+
+}
+
+
+.transform-box:hover{
+
+  transform:scale(1.04);
+
+}
+
+
+/* placeholder */
+
+.img-placeholder{
+
+  height:100%;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  color:#333;
+
+  font-weight:700;
+
+  letter-spacing:1px;
+
+  font-size:14px;
+
+}
+
+
+/* overlay */
+
+.img-overlay{
+
+  position:absolute;
+
+  inset:0;
+
+  background:linear-gradient(
+
+    to top,
+
+    rgba(255,60,60,.8),
+
+    rgba(255,60,60,.1),
+
+    transparent
+
+  );
+
+  opacity:0;
+
+  transition:.4s;
+
+  display:flex;
+
+  align-items:flex-end;
+
+  padding:18px;
+
+}
+
+
+.overlay-content{
+
+  font-size:12px;
+
+  font-weight:700;
+
+  letter-spacing:1px;
+
+  padding:8px 14px;
+
+  background:rgba(0,0,0,.5);
+
+  border-radius:30px;
+
+  backdrop-filter:blur(8px);
+
+}
+
+
+.transform-box:hover .img-overlay{
+
+  opacity:1;
+
+}
+
+
+/* stats */
+
+.transform-stats{
+
+  margin-top:60px;
+
+}
+
+
+.transform-stats h3{
+
+  font-size:58px;
+
+  font-weight:900;
+
+  background:linear-gradient(45deg,#ff3e3e,#ff9b9b);
+
+  -webkit-background-clip:text;
+
+  -webkit-text-fill-color:transparent;
+
+}
+
+
+.transform-stats p{
+
+  font-size:12px;
+
+  color:#777;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* responsive */
+
+@media(max-width:700px){
+
+.transform-section{
+
+  padding:90px 25px;
+
+}
+
+.transform-gallery{
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:10px;
+
+}
+
+.transform-stats h3{
+
+  font-size:42px;
+
+}
+
+}
+.transform-box img{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+  transition:.4s;
+
+}
+
+.transform-box:hover img{
+
+  transform:scale(1.08);
+
+}
+/* ================= TRANSFORMATIONS MOBILE ================= */
+
+@media (max-width: 768px) {
+  .transform-section {
+    padding: 80px 6% 60px;
+  }
+
+  .transform-heading {
+    margin-bottom: 40px;
+  }
+
+  .transform-heading h2 {
+    font-size: 28px; /* Mobile-friendly size */
+    line-height: 1.2;
+  }
+
+  .transform-heading p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  /* Gallery Layout Optimization */
+  .transform-gallery {
+    /* Changing to 2 columns for better visibility on most phones */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 12px;
+  }
+
+  /* Making specific items span or look different for premium feel */
+  .transform-box {
+    border-radius: 12px;
+  }
+
+  /* Overlay adjustments for touch screens */
+  .img-overlay {
+    opacity: 1; /* Mobile-la hover kedaiyathu, so always show a subtle overlay */
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7) 0%,
+      transparent 50%
+    );
+  }
+
+  .overlay-content {
+    font-size: 10px;
+    padding: 6px 12px;
+    background: rgba(255, 60, 60, 0.9); /* High contrast for mobile */
+    backdrop-filter: none; /* Performance boost for older phones */
+  }
+
+  /* Stats Section Mobile */
+  .transform-stats {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .transform-stats h3 {
+    font-size: 48px;
+    margin-bottom: -5px;
+  }
+
+  .transform-stats p {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+}
+
+/* Extra Small Phones (Portrait) */
+@media (max-width: 480px) {
+  .transform-section {
+    padding: 70px 20px;
+  }
+
+  .transform-gallery {
+    /* 2 columns is still best, but we reduce gap */
+    gap: 8px;
+  }
+
+  .transform-heading h2 {
+    font-size: 24px;
+  }
+
+  /* Optional: Force the first image to be wider for a "Featured" look */
+  /* .transform-box:first-child { grid-column: span 2; } */
+
+  .transform-stats h3 {
+    font-size: 40px;
+  }
+}

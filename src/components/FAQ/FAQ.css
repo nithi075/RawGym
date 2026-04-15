@@ -1,0 +1,193 @@
+.faq{
+  padding:120px 10%;
+  background:#0a0a0a;
+  color:white;
+  text-align:center;
+}
+
+
+/* heading */
+
+.faq-header{
+  margin-bottom:50px;
+}
+
+
+.tag{
+  color:#e53e3e;
+  font-size:12px;
+  letter-spacing:2px;
+  font-weight:700;
+  display:inline-block;
+  margin-bottom:10px;
+}
+
+
+.faq-header h2{
+  font-size:clamp(28px,4vw,40px);
+  font-weight:900;
+}
+
+
+.faq-header span{
+  color:#e53e3e;
+}
+
+
+/* list */
+
+.faq-list{
+  max-width:700px;
+  margin:auto;
+  text-align:left;
+}
+
+
+/* item */
+
+.faq-item{
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+
+/* question */
+
+.faq-question{
+  width:100%;
+  background:none;
+  border:none;
+  color:white;
+  font-size:15px;
+  font-weight:600;
+  text-align:left;
+  padding:18px 0;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+
+.icon{
+  font-size:20px;
+  color:#e53e3e;
+  font-weight:700;
+}
+
+
+/* answer */
+
+.faq-answer{
+  max-height:0;
+  overflow:hidden;
+  color:#aaa;
+  font-size:14px;
+  line-height:1.7;
+  transition:.3s;
+}
+
+
+.faq-answer.show{
+  max-height:200px;
+  padding-bottom:18px;
+}
+
+
+/* responsive */
+
+@media(max-width:600px){
+
+.faq{
+  padding:80px 20px;
+}
+
+.faq-question{
+  font-size:14px;
+}
+
+}
+/* ================= FAQ MOBILE ================= */
+
+@media (max-width:600px){
+
+.faq{
+  padding:75px 6%;
+}
+
+/* heading */
+
+.faq-header{
+  margin-bottom:35px;
+}
+
+.tag{
+  font-size:11px;
+  letter-spacing:1.5px;
+}
+
+.faq-header h2{
+  font-size:24px;
+  line-height:1.3;
+}
+
+/* list */
+
+.faq-list{
+  max-width:100%;
+}
+
+/* question */
+
+.faq-question{
+  font-size:14px;
+  padding:16px 0;
+  gap:10px;
+}
+
+/* icon */
+
+.icon{
+  font-size:18px;
+}
+
+/* answer */
+
+.faq-answer{
+  font-size:13.5px;
+  line-height:1.6;
+}
+
+/* open state smoother spacing */
+
+.faq-answer.show{
+  padding-bottom:16px;
+}
+
+}
+
+
+/* small phones */
+
+@media (max-width:420px){
+
+.faq{
+  padding:65px 18px;
+}
+
+.faq-header h2{
+  font-size:22px;
+}
+
+.faq-question{
+  font-size:13.5px;
+}
+
+.faq-answer{
+  font-size:13px;
+}
+
+.icon{
+  font-size:17px;
+}
+
+}

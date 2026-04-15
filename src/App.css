@@ -1,0 +1,55 @@
+/* 1. Import eppovumae mudhal variyil irukka vendum */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* 2. Variables Definition */
+:root {
+  --primary-font: 'Poppins', sans-serif;
+  --accent-color: #ff4d2d;
+  --bg-dark: #080808;
+}
+
+/* 3. Global Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--bg-dark);
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* 4. Common Elements */
+button, input, select, textarea {
+  font-family: var(--primary-font);
+}
+
+
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+
+html,body{
+ width:100%;
+ overflow-x:hidden;
+ background:#000;
+}
+section{
+
+ scroll-margin-top:90px;
+
+}

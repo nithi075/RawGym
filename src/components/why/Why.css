@@ -1,0 +1,322 @@
+.why-section{
+
+  padding:130px 10%;
+
+  background:#050505;
+
+  color:white;
+
+  text-align:center;
+
+}
+
+
+/* heading */
+
+.why-heading{
+
+  max-width:650px;
+
+  margin:auto;
+
+  margin-bottom:70px;
+
+}
+
+
+.mini-tag{
+
+  font-size:12px;
+
+  letter-spacing:2px;
+
+  color:#ff4a4a;
+
+  font-weight:700;
+
+  display:inline-block;
+
+  margin-bottom:14px;
+
+}
+
+
+.why-heading h2{
+
+  font-size:clamp(34px,4vw,46px);
+
+  font-weight:900;
+
+  margin-bottom:14px;
+
+}
+
+
+.why-heading span{
+
+  background:linear-gradient(45deg,#ff3e3e,#ff9b9b);
+
+  -webkit-background-clip:text;
+
+  -webkit-text-fill-color:transparent;
+
+}
+
+
+.why-heading p{
+
+  color:#9a9a9a;
+
+  line-height:1.7;
+
+}
+
+
+/* grid */
+
+.why-container{
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+  gap:26px;
+
+}
+
+
+/* card */
+
+.why-box{
+
+  padding:35px 28px;
+
+  background:#0f0f0f;
+
+  border-radius:20px;
+
+  border:1px solid rgba(255,255,255,.05);
+
+  text-align:left;
+
+  transition:.35s;
+
+  position:relative;
+
+}
+
+
+.why-box:hover{
+
+  transform:translateY(-6px);
+
+  border:1px solid rgba(255,60,60,.25);
+
+}
+
+
+/* featured highlight */
+
+.featured{
+
+  background:linear-gradient(
+
+    160deg,
+
+    rgba(255,60,60,.15),
+
+    rgba(255,60,60,.02)
+
+  );
+
+  border:1px solid rgba(255,60,60,.25);
+
+}
+
+
+/* icon */
+
+.why-icon{
+
+  font-size:30px;
+
+  margin-bottom:15px;
+
+}
+
+
+/* title */
+
+.why-box h3{
+
+  font-size:20px;
+
+  margin-bottom:10px;
+
+}
+
+
+/* desc */
+
+.why-box p{
+
+  color:#b5b5b5;
+
+  line-height:1.7;
+
+  font-size:14px;
+
+}
+
+
+/* bottom accent */
+
+.why-line{
+
+  width:35px;
+
+  height:3px;
+
+  background:#ff3e3e;
+
+  margin-top:20px;
+
+  border-radius:10px;
+
+}
+
+
+/* responsive */
+
+@media(max-width:700px){
+
+.why-section{
+
+  padding:90px 25px;
+
+}
+
+.why-box{
+
+  text-align:center;
+
+}
+
+.why-line{
+
+  margin:auto;
+
+  margin-top:18px;
+
+}
+
+}
+/* ================= WHY SECTION MOBILE ================= */
+
+@media (max-width:700px){
+
+.why-section{
+  padding:85px 6%;
+}
+
+/* heading */
+
+.why-heading{
+  margin-bottom:45px;
+}
+
+.mini-tag{
+  font-size:11px;
+  letter-spacing:1.5px;
+}
+
+.why-heading h2{
+  font-size:28px;
+  line-height:1.25;
+}
+
+.why-heading p{
+  font-size:14px;
+  padding:0 5px;
+}
+
+/* grid */
+
+.why-container{
+  gap:18px;
+}
+
+/* cards */
+
+.why-box{
+  padding:28px 22px;
+  border-radius:18px;
+  text-align:center;
+}
+
+/* icon */
+
+.why-icon{
+  font-size:26px;
+  margin-bottom:12px;
+}
+
+/* title */
+
+.why-box h3{
+  font-size:18px;
+}
+
+/* description */
+
+.why-box p{
+  font-size:13.5px;
+}
+
+/* bottom accent */
+
+.why-line{
+  margin:auto;
+  margin-top:16px;
+  width:32px;
+  height:3px;
+}
+
+/* featured highlight slightly stronger */
+
+.featured{
+  border:1px solid rgba(255,60,60,.35);
+}
+
+}
+
+
+/* small phones */
+
+@media (max-width:420px){
+
+.why-section{
+  padding:75px 18px;
+}
+
+.why-heading h2{
+  font-size:24px;
+}
+
+.why-heading p{
+  font-size:13px;
+}
+
+.why-box{
+  padding:24px 18px;
+}
+
+.why-box h3{
+  font-size:17px;
+}
+
+.why-icon{
+  font-size:24px;
+}
+
+}
