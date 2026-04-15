@@ -3,7 +3,6 @@ import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import Transformations from "./components/Transformation/Transformation";
-import Coach from "./components/Coach/Coach";
 import Programs from "./components/Programs/Programs";
 import Pricing from "./components/Pricing/Pricing";
 import Testimonials from "./components/Testimonial/Testimonial";
@@ -11,8 +10,6 @@ import FAQ from "./components/FAQ/FAQ";
 import Location from "./components/Location/Location";
 import Footer from "./components/Footer/Footer";
 import FloatingWhatsapp from "./components/Floating/Floating";
-import Brands from "./components/brands/Brands"
-import About from "./components/About/About";
 import Why from "./components/why/Why";
 
 
